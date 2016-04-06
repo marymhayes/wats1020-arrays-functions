@@ -1,6 +1,12 @@
 // This is the file where you will write the Truncate Words function and related code.
 
 // TODO: Create a Function called truncateWords() that accepts two arguments: 
+var truncateWords = function (originalText, numWords){
+   originalText.split(" ");
+}
+  
+
+
 // longText (a String with several words in it)
 // numWords (an Integer that sets the number of words you want in the returned text)
 
