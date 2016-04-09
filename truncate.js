@@ -50,6 +50,8 @@ var shortText = truncateWords(originalText, wordCount);
 console.log('originalText: ' + originalText);
 console.log('shortText: ' + shortText);
 
+//Completed, hooray!
+
 
 
 
