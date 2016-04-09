@@ -1,11 +1,6 @@
 // This is the file where you will write the Truncate Words function and related code.
 
 // TODO: Create a Function called truncateWords() that accepts two arguments: 
-var truncateWords = function (originalText, numWords){
-   originalText.split(" ");
-}
-  
-
 
 // longText (a String with several words in it)
 // numWords (an Integer that sets the number of words you want in the returned text)
@@ -23,7 +18,42 @@ var truncateWords = function (originalText, numWords){
 // You do not need to change the following lines, but you may change them if you 
 // are experimenting further or pursuing stretch goals.
 var originalText = "There are two hard things in Computer Science: Cach invalidation, naming things, and off-by-one errors.";
-var wordLimit = 8;
-var shortText = truncateWords(originalText, wordLimit);
+var wordCount = 8;
+
+var truncateWords = function(longText,numWords) {
+  var TextArray = longText.split(" ");
+  var TextLength = TextArray.length;
+  
+  console.log(TextArray,TextLength);
+  
+  var WordsRemove = (TextLength - wordCount);
+  
+  console.log(WordsRemove);
+  
+  TextArray.splice(numWords,WordsRemove);
+  
+  console.log(TextArray);
+  
+  TextArray.push("...");
+  
+  console.log(TextArray);
+  
+  var JoinString = TextArray.join(" ");
+  
+  console.log(JoinString);
+  
+  return JoinString;  
+  
+};
+
+var shortText = truncateWords(originalText, wordCount);
 console.log('originalText: ' + originalText);
 console.log('shortText: ' + shortText);
+
+
+
+
+
+
+
+
